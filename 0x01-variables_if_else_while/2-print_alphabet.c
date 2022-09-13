@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
+nclude <stdio.h>
 #include <time.h>
 
 /**
@@ -9,12 +8,17 @@
  */
 
 int main(void)
-{
-	char low;
 
-	for (low = 'a'; low <= 'z'; low++)
-		putchar(low);
-		putchar('\n');
+{
+	int n = 97;
+
+	while (n <= 122)
+	{
+		putchar(n);
+		n++;
+	}
+	putchar('\n');
 
 	return (0);
+
 }
