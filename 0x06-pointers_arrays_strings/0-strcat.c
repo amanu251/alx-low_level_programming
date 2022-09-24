@@ -1,16 +1,23 @@
 #include "main.h"
-#include <string.h>
+#include <stdio.h>
 
 /**
- * _strcat - concatenates string 2 to string 1
- * @dest: string 1
- * @src: string 2
+ * _strncpy - a function that copies a string
  *
- * Return: Always dest
+ * @dest: string to be copied to
+ * @src: string to be copied
+ * @n: bumber of bytes to be copied
+ *
+ * Return: copied string
  */
-char *_strcat(char *dest, char *src)
-{
 
-	strcat(dest, src);
+char *_strncpy(char *dest, char *src, int n)
+{
+	int i;
+
+	for (i = 0; i < n && dest[i] && src[i];  i++)
+		dest[i] = src[i];
+	for (; i < n ; i++)
+		dest[i] = '\0';
 	return (dest);
 }
