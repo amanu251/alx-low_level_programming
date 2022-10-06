@@ -5,7 +5,7 @@
  *
  * @dest: string to be copied to
  * @src: string to be copied
- * @n: bumber of bytes to be copied
+ * @n: number of bytes to be copied
  *
  * Return: copied string
  */
