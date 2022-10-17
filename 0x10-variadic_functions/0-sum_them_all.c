@@ -3,22 +3,26 @@
 
 /**
  * sum_them_all - sums the values of inout integers
- * @n: number of arguments 
+ * @n: number of arguments
  *
  * Return: an integer
  */
 int sum_them_all(const unsigned int n, ...)
 {
 	unsigned int i, sum = 0;
-	
+
 	va_list args;
-	va_start (args, n);
+
+	if (n == 0)
+		return (0);
+
+	va_start(args, n);
 
 	for (i = 0; i < n; i++)
 	{
-		sum += va_arg (args, int);
+		sum += va_arg(args, unsigned int);
 	}
-	va_end (args);
-	
+	va_end(args);
+
 	return (sum);
 }
