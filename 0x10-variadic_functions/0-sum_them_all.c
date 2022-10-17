@@ -1,11 +1,12 @@
 #include <stdarg.h>
+#include <stdlib.h>
 #include "variadic_functions.h"
 
 /**
  * sum_them_all - sums the values of inout integers
  * @n: number of arguments
  *
- * Return: an integer
+ * Return: sum of numbers or 0 when n == 0
  */
 int sum_them_all(const unsigned int n, ...)
 {
